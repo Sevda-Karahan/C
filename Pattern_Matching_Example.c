@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #define MAX_CHAR 25
-int indexOfV1( char *, char *);
 
+int indexOfV1( char *, char *);
 int indexOfV2( char *, char *);
 
 int main () {
