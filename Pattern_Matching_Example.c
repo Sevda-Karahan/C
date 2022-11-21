@@ -1,6 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 #define MAX_CHAR 25
+int indexOfV1( char *, char *);
+
+int indexOfV2( char *, char *);
+
+int main () {
+	char str1[MAX_CHAR], str2[MAX_CHAR];
+	int pos;
+	printf("Enter the 1st string (Max. %d characters): ", MAX_CHAR);
+	scanf("%s",str1);
+	printf("Enter the 2nd string (Max. %d characters): ", MAX_CHAR);
+	scanf("%s",str2);
+	printf("Found at: %d", indexOfV2(str1,str2));
+	return(0);
+}
+
 int indexOfV1( char *ptr1, char *ptr2) {
 	int i, matchCount = 0;
 	int len1 = strlen(ptr1), len2 = strlen(ptr2);
@@ -25,15 +40,4 @@ int indexOfV2( char *ptr1, char *ptr2) {
 		return ptr-ptr1;
 	else 
 		return -1;
-}
-
-int main () {
-	char str1[MAX_CHAR], str2[MAX_CHAR];
-	int pos;
-	printf("Enter the 1st string (Max. %d characters): ", MAX_CHAR);
-	scanf("%s",str1);
-	printf("Enter the 2nd string (Max. %d characters): ", MAX_CHAR);
-	scanf("%s",str2);
-	printf("Found at: %d", indexOfV2(str1,str2));
-	return(0);
 }
