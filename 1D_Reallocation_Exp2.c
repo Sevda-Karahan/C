@@ -34,6 +34,7 @@ int main() {
 	}
 	
 	printf("\nDizi eleman sayisi: %d\nDizinin bellekte kapladigi alan: %d\n", i, current_size);
+	free(Sepet);
 	return 0;
 }
 
