@@ -7,7 +7,7 @@ int f();
 int main() {
 	
 	srand(time(NULL));
-	int current_size = 3;
+	int current_size = 2;
 	
 	int *Sepet = (int *) malloc(current_size * sizeof(int));
 	int i = 0;
