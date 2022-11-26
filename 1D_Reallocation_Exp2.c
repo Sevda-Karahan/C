@@ -20,7 +20,7 @@ int main() {
 		Sepet[i++] = f();
 		
 		if(i == current_size){
-			current_size *= 2;
+			current_size += 3;
 			Sepet = (int *) realloc(Sepet, current_size * sizeof(int));
 		}
 	} 	
